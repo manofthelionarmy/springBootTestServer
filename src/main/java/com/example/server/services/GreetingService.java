@@ -24,7 +24,7 @@ public class GreetingService {
         return g;
     }
 
-    public ResponseEntity<Greeting> updateUser(Greeting greeting){
+    public ResponseEntity<?> updateUser(Greeting greeting){
 
         Greeting update = new Greeting(greeting.getId(), greeting.getContent());
 
